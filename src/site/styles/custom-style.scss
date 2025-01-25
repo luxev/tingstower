@@ -11,7 +11,7 @@ html body {
   font-family: "LXGW WenKai Screen", 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif !important;
   font-weight: 400 !important;
   font-style: normal !important;
-  font-size: 16px !important;
+  font-size: 12px !important;
   line-height: 1.8 !important;
   color: var(--text-normal) !important;
 }
@@ -37,15 +37,21 @@ p.grid img,p.grid-4 img{}
 @media(hover:hover){
 	.external-link:hover,.markdown-rendered .internal-link.is-unresolved:hover,a:hover{color:var(--link-color);}
 }
-body nav.filetree-sidebar{position:fixed;top:85px;left:20px;display:flex;overflow-x:hidden;width:300px;height:calc(100% - 160px);border-radius:10px;font-weight:800;flex-direction:column;background: var(--nav-background) !important;color: #ffffff !important;padding: 1rem !important;}
+body nav.filetree-sidebar{position:fixed;top:0;left:0;height:100vh;margin:0;padding:0;background: var(--nav-background) !important;color: #ffffff !important;}
 .sidebar{font-weight:800;}
-body nav.filetree-sidebar .search-button{margin:10px 10px 20px;min-width:160px;}
+body nav.filetree-sidebar .search-button{margin:0 1em 1em;background: rgba(255, 255, 255, 0.1) !important;border: none !important;}
+body nav.filetree-sidebar .search-button input{color: #666666 !important;}
+body nav.filetree-sidebar .search-button input::placeholder{color: #666666 !important;}
 body nav.filetree-sidebar>.folder{overflow-x:hidden;overflow-y:auto;margin-right:-10px;flex:1;}
-body nav.filetree-sidebar .notelink{padding:0.3em 0.5em !important;border-radius: 4px !important;transition: background-color 0.2s ease !important;}
-body nav.filetree-sidebar .notelink a:before{margin-right:2px;}
-body nav.filetree-sidebar .notelink.active-note{transform:unset;}
+body nav.filetree-sidebar .notelink{padding:0.3em 1em !important;border-radius: 4px !important;transition: background-color 0.2s ease !important;}
+body nav.filetree-sidebar .notelink a{color: rgba(255, 255, 255, 0.8) !important;text-decoration: none !important;font-weight: normal !important;}
+body nav.filetree-sidebar .notelink a:hover{color: #ffffff !important;}
+body nav.filetree-sidebar .notelink:hover{background-color: rgba(255, 255, 255, 0.1) !important;}
+body nav.filetree-sidebar .notelink.active-note{transform:unset;background-color: rgba(255, 255, 255, 0.2) !important;}
+body nav.filetree-sidebar .notelink.active-note a{color: #ffffff !important;}
 body nav.filetree-sidebar .fa-sticky-note{display:none!important;}
-body nav.filetree-sidebar h1:before{display:block;width:100%;height:3em;background-image:url(/img/logo.svg);background-position:50%;background-size:contain;background-repeat:no-repeat;content:" ";}
+body nav.filetree-sidebar h1{color: #ffffff !important;padding: 1em !important;margin: 0 !important;}
+body nav.filetree-sidebar h1:before{display:none!important;}
 body nav.toc ol{padding-left:10px;border-left:2px solid var(--background-secondary);list-style:none;}
 body nav.toc>ol{border-left:none;}
 body header{margin-bottom:1.8em;}
