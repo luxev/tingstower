@@ -422,20 +422,3 @@ body nav.filetree-sidebar .collapse-icon {
 body nav.filetree-sidebar .collapse-icon:hover {
   color: #ffffff !important;
 }
-
-/* Table of Contents styling */
-.toc {
-  .toc-title {
-    height: 24px !important;
-    
-    &:after {
-      visibility: visible !important;
-      position: absolute !important;
-      left: 0 !important;
-      top: 0 !important;
-      color: #000000 !important;
-      font-weight: 500 !important;
-      font-size: 1.2em !important;
-    }
-  }
-}
