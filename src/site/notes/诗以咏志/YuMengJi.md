@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"//yu-meng-ji/","created":"2025-01-25T16:39:31.376+08:00","updated":"2025-01-27T15:12:06.585+08:00"}
+{"dg-publish":true,"permalink":"/诗以咏志/YuMengJi/","created":"2025-01-25T16:39:31.376+08:00","updated":"2025-01-27T15:12:06.585+08:00"}
 ---
 
 
